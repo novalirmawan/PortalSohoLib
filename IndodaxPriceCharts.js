@@ -9,7 +9,7 @@ function updateDataAPI() {
     success: function(data) {
       var row;
 
-      $('#coins').html('<tr><th style="text-align: center;">Pairs</th><th>Harga</th> <th>Beli</th> <th>jual</th> <th>Tertinggi 24h</th><th>Terendah 24h</th></tr>')
+      $('#coins').html('<tr><th>Pairs</th><th>Harga</th> <th>Beli</th> <th>jual</th> <th>Tertinggi 24h</th><th>Terendah 24h</th></tr>')
       for (var key in data.tickers) {
         row = `<tr>
               <td>` + key.toUpperCase() + `</td>
